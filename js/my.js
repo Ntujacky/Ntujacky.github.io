@@ -1,5 +1,9 @@
 // 當文件都下載完後執行
+
+
 $(document).ready(function () {
+
+    $('.MyImg').hide();
 
     // 找 div 且 class 有 col-md-12 的兒子 class 有 btn
     // 關於 selector 可參考 http://www.w3schools.com/jquery/jquery_ref_selectors.asp
@@ -15,7 +19,7 @@ $(document).ready(function () {
             console.log('index:' + index + ' 按到了喔');
 
             // 抓出 img 中的第 index 個
-            var img = $('img:eq(' + index + ' )');
+            var img = $('.MyImg:eq(' + index + ' )');
 
 
 
